@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Hello, world!</title>
 </head>
 <body>
@@ -23,6 +24,13 @@
         <!--<div class="header__menu"></div>-->
 
     <!--</div>-->
+    <div class="contacts">
+        <ul>
+            <li class="contacts__item"><a href="tel: +375 (44) 7573019">+375 (44) 7573019</a><i class="fab fa-viber"></i><i class="fab fa-telegram-plane"></i><i class="fab fa-whatsapp"></i></li>
+            <li class="contacts__item"><a href="tel:+375 (33) 6377521">+375 (33) 6377521</a></li>
+            <li class="contacts__item"><a href="tel:+375 (17) 2469010">+375 (17) 2469010</a></li>
+        </ul>
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,14 +39,17 @@
         <div class="collapse navbar-collapse">
             <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Мебель Лайм"></a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Catalog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Salons</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -47,9 +58,23 @@
             </form>
         </div>
     </nav>
+
+</div>
+<div class="social">
+    <div class="insta">
+        <a href="#" target="_blank"><img src="img/social_icons/instagram.png"></a>
+    </div>
+    <div class="vk">
+        <a href="#" target="_blank"><img src="img/social_icons/VK.png"></a>
+    </div>
+    <div class="fb">
+        <a href="#" target="_blank"><img src="img/social_icons/facebook.png"></a>
+    </div>
 </div>
 
+
 <!-- Optional JavaScript -->
+<script defer src="js/main.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
