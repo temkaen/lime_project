@@ -1,15 +1,17 @@
+@import "variables";
+
 .header {
-  background: #fff;
-  border-bottom: 2px solid #b2b2b2;
   font: .9em Arial, sans-serif;
+
+  .top-stroke {
+    background: @block-bg-color;
+    border-bottom: 2px solid @line-color;
+  }
   
   .contacts {
     span {
-      position: relative;
-      top: 25%;
-
       a {
-        color: #444444;
+        color: @links-main-color;
         text-decoration: none;
         margin-left: 10px;
         -webkit-transition: all .2s;
@@ -19,7 +21,97 @@
         transition: all .2s;
 
         &:hover {
-          color: #b2b2b2;
+          color: @links-hover-color;
+        }
+
+        i {
+          -webkit-transition: all .2s;
+          -moz-transition: all .2s;
+          -ms-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s;
+        }
+
+        &:hover i {
+          color: @icons-hover-color;
+        }
+      }
+    }
+  }
+
+  .nav-controls {
+
+    .navigation {
+      
+      .links-list {
+        display: flex;
+
+        li {
+
+          &:not(:last-of-type) {
+            margin-right: 5px;
+          }
+
+          a {
+            display: block;
+            text-align: center;
+            padding: 25px 10px;
+            font-size: 1.2em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: @menu-items-text;
+            background: @menu-items-bg;
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            -ms-transition: all .2s;
+            -o-transition: all .2s;
+            transition: all .2s;
+
+            &:hover {
+              background: @menu-items-bg-hover;
+            }
+          }
+        }
+      }
+    }
+
+    .search {
+      background: @block-bg-color;
+      -webkit-background-clip: content-box;
+      background-clip: content-box;
+      display: flex;
+      align-items: center;
+
+      form {
+        padding: 0 15px;
+        font-size: 1.1em;
+
+        input {
+          padding: 10px 5px;
+          border: 2px solid @input-border-color;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          outline: none;
+        }
+
+        button {
+          padding: 10px 5px;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          background: @button-bg;
+          color: @menu-items-text;
+          -webkit-transition: all .2s;
+          -moz-transition: all .2s;
+          -ms-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s;
+
+          &:hover {
+            background: lighten(@button-bg, 25%);
+            border-bottom: 2px solid @button-bg;
+          }
         }
       }
     }

@@ -1,6 +1,8 @@
+@import "variables";
+
 .footer {
   .address-and-social {
-    background: #ffffff;
+    background: @block-bg-color;
     height: 400px;
     -webkit-background-clip: content-box;
     background-clip: content-box;
@@ -11,19 +13,29 @@
       position: relative;
 
       h3 {
-        font: bold 2em Arial, sans-serif;
+        font: 2em Arial, sans-serif;
+        font-weight: 900;
         text-transform: uppercase;
         text-align: center;
-        color: #444;
+        color: @links-main-color;
       }
 
       ul li {
         margin: 15px 0;
 
         a {
-          color: #444;
+          color: @links-main-color;
           font: 1.2em Arial, sans-serif;
           text-decoration: none;
+          -webkit-transition: all .2s;
+          -moz-transition: all .2s;
+          -ms-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s;
+
+          &:hover {
+            color: @links-hover-color;
+          }
 
           i {
             -webkit-transition: all .2s;
@@ -34,7 +46,7 @@
           }
 
           &:hover i {
-            color: red;
+            color: @icons-hover-color;
           }
         }
       }
@@ -94,12 +106,12 @@
   }
 
   .copyright {
-    border-top: 2px solid #b2b2b2;
-    background: #ffffff;
+    border-top: 2px solid @line-color;
+    background: @block-bg-color;
     position: relative;
     top: -3px;
     text-align: center;
     font: .7em Arial, sans-serif;
-    color: #444;
+    color: @links-main-color;
   }
 }
