@@ -1,0 +1,117 @@
+@import "variables";
+
+.footer {
+  .address-and-social {
+    background: @block-bg-color;
+    height: 400px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+
+    .inset-address-block {
+      padding: 15px;
+      height: 100%;
+      position: relative;
+
+      h3 {
+        font: 2em Arial, sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        color: @links-main-color;
+      }
+
+      ul li {
+        margin: 15px 0;
+
+        a {
+          color: @links-main-color;
+          font: 1.2em Arial, sans-serif;
+          text-decoration: none;
+          -webkit-transition: all .2s;
+          -moz-transition: all .2s;
+          -ms-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s;
+
+          &:hover {
+            color: @links-hover-color;
+          }
+
+          i {
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            -ms-transition: all .2s;
+            -o-transition: all .2s;
+            transition: all .2s;
+          }
+
+          &:hover i {
+            color: @icons-hover-color;
+          }
+        }
+      }
+
+      .social-links {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        left: 15px;
+        text-align: center;
+
+        a {
+          font-size: 1.8em;
+
+          &:not(:last-of-type) {
+            margin-right: 20px;
+          }
+
+          &.vkontakte {
+            color: cornflowerblue;
+          }
+
+          &.facebook {
+            color: blue;
+          }
+
+          &.twitter {
+            color: lightskyblue;
+          }
+
+          &.google-plus {
+            color: orangered;
+          }
+
+          &.odnoklassniki {
+            color: orange;
+          }
+
+          i {
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            -ms-transition: all .2s;
+            -o-transition: all .2s;
+            transition: all .2s;
+          }
+
+          &:hover i {
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    border-top: 2px solid @line-color;
+    background: @block-bg-color;
+    position: relative;
+    top: -3px;
+    text-align: center;
+    font: .7em Arial, sans-serif;
+    color: @links-main-color;
+  }
+}
