@@ -1,0 +1,103 @@
+.header {
+  position: relative;
+    &__logo {
+      margin: 5px;
+    }
+    &__contacts {
+      float: right;
+      padding: 10px;
+      margin-right: 80px;
+      display: flex;
+      flex-flow: row;
+
+        & span {
+          margin: 0 5px;
+            & a {
+              text-decoration: none;
+              color: darkslategray;
+              font-size: 1.3rem;
+                & i {
+                  margin-right: 3px;
+                }
+            }
+        }
+        &_responsive {
+          position: fixed;
+          right: 15px;
+          top: 10px;
+          font-size: 1.5rem;
+          display: none !important;
+
+        }
+    }
+    &__menu {
+      margin-right: 80px;
+        & ul {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-end;
+          margin-right: 10px;
+            & li {
+              width: 140px;
+              height: 40px;
+              text-align: center;
+              position: relative;
+
+                & a {
+                  text-decoration: none;
+                  color: darkslategray;
+                  font-size: 1.3rem;
+                  display: block;
+                  cursor: pointer;
+                  .centeritem;
+
+                }
+            }
+            & li:hover {
+              border-bottom: solid darkslategray 5px;
+            }
+        }
+    }
+}
+
+
+
+
+
+///responsive///
+
+@media all and (max-width: 1124px) {
+  .header__contacts, .header__menu  {
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .header__contacts span a {
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .header__contacts {
+    position: absolute;
+    flex-flow: column nowrap;
+    background: lime;
+    display: none;
+
+    & span {
+      margin-bottom: 8px;
+      position: relative;
+      display: block;
+    }
+    &_responsive {
+      display: block !important;
+    }
+    &_active {
+      position: absolute;
+      flex-flow: column nowrap;
+      display: block;
+    }
+  }
+
+}
